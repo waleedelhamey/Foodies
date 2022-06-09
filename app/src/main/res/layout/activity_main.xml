@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/viewpager"
+            android:padding="3dp"
+            >
+
+        </androidx.viewpager2.widget.ViewPager2>
+
+        <me.relex.circleindicator.CircleIndicator3
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/indicator"
+            android:background="#8888"
+            >
+        </me.relex.circleindicator.CircleIndicator3>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <fragment
+            android:id="@+id/list"
+            class="com.example.foodies.fragments.FragmentList"
+            android:name="com.example.foodies.fragments.FragmentList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></fragment>
+        </androidx.fragment.app.FragmentContainerView>
+
+</LinearLayout>
